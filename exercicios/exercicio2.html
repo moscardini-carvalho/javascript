@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <script>
+            
+            /* Calculadora de idade a partir do ano de nascimento e o ano atual */
+
+            var anoNascimento = prompt("Insira o ano de seu nascimento");
+            
+            while(anoNascimento >= 2020){
+                alert("Insira um ano real");
+                anoNascimento = prompt("Insira o ano de seu nascimento");
+            }
+            var anoAtual = prompt("Insira o ano em que se encontra");
+            var idade = anoAtual - anoNascimento;
+
+            alert("A sua idade é: "+idade);
+            
+        </script>
+    </body>
+</html>

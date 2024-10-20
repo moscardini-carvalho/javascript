@@ -1,0 +1,67 @@
+<html>
+<body>
+    <script>
+
+                /* Condições */
+
+            var numero = 10;
+            var nome = "João";
+
+                /* Validação da condição com if (se) */
+            
+            if(nome == "João"){
+                console.log("Verdadeiro!");
+            }
+
+            /* Validação da condição com else if (senão se) */
+            
+            if(nome == "Felipe"){
+                console.log("Verdadeiro!");
+            }
+            
+            else if( nome == "João"){
+                console.log("Verdadeiro dentro do else if!");
+            }
+
+            /* Validação da condição com (então) */
+            
+            if(nome == "felipe"){
+                console.log("Verdadeiro!");
+            }
+            
+            else{
+                console.log("Verdadeiro com else!");
+            }
+
+            /* Tipos de condições */
+
+            // Quando se tratando de números, temos as seguintes condições:
+            
+            // >= (maior ou igual)
+            // >  (menor)
+            // <= (menor ou igual)
+            // <  (menor)
+            // != (diferente)
+            // &  (e)
+            // || (ou)
+
+            if(numero <= 10){   // Caso tenha qualquer valor menor ou igual, ele aparecerá
+                console.log("O número escrito é menor ou igual a 10!");
+            }
+
+            if(nome != "Felipe"){   // Caso o valor da variável nome seja diferente, aparecerá na tela
+                console.log("A condição diferente foi atendida!");
+            }
+
+            if(numero == 10 && nome =="João"){  //Aqui precisa atender as duas condições ao mesmo tempo
+                console.log("Ativou uma combinação de condições!");
+            }
+
+            if(numero == 10 || nome =="João"){  //Aqui precisa atender uma das duas condições
+                console.log("Ativou outra combinação de condições!");
+            }
+
+    </script>
+</body>
+</html>
+

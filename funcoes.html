@@ -1,0 +1,51 @@
+<html>
+    <body>
+        <script>
+            /* Funções */ 
+            function testes(){
+                // Tudo que vai ser executado entra aqui
+                console.log("Quando funcionar, ela aparecerá!")
+            }
+                            // tudo q estiver dentro dos parenteses são chamados de parametros
+            function testes2(nome, idade, peso){
+                console.log("O nome passado é: "+nome);
+                console.log("a idade passada é: "+idade);
+                console.log("O peso passado é: "+peso);
+                console.log("------------------");
+            }
+
+            testes2("Guilherme", 20, 68.9);
+            testes2("João", 14, 56.40);
+
+            function verifFunc(){
+                return "Função funcionou";
+            }
+            
+            var func = verifFunc();
+            console.log("Esta é uma função para chamar um return!",func);
+
+            function pegarNome(parametro){
+                if(parametro == 1){
+                    return "Deu certo"
+                }else{
+                    return "Não deu certo"
+                }
+                
+            }
+
+            var nome = pegarNome(2);
+            console.log(nome);
+
+            var func = function(){
+                alert("Olá mundo!");
+           }
+           func();
+
+           (function(){
+            alert("Olá mundo!");
+           })();
+
+        </script>
+    </body>
+</html>
+
