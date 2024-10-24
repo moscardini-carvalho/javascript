@@ -1,18 +1,42 @@
 <html>
+    <body>
+        <script>
+            // teste da calculadora com o formato .JS
 
-<body>
-    <script>
-        // teste da calculadora com o formato .JS
+            var numero_1 = prompt("Insira um valor: ");
 
-        var numero_1 = prompt("Insira um valor: ");
+           
+            var sinal = prompt("Insira um sinal: ");
 
-        var sinal = prompt("Insira um sinal: ");
+            while (sinal != "+" && sinal != "-" && sinal != "/" && sinal != "*"){
+                alert("Sinal inserido inválido. Tente novamente");
+                var sinal = prompt("Insira um sinal: ");
+            }
 
-        var numero_2 = prompt("Insira outro valor: ");
+            var numero_2 = prompt("Insira outro valor: ");
+
+            var resultado = 0;
+
+            numero_1 = parseInt(numero_1);
+            numero_2 = parseInt(numero_2);
+
+            if(sinal == "*"){
+                resultado = numero_1 * numero_2;
+            }
+            if(sinal == "/"){
+                resultado = numero_1 / numero_2;
+            }
+            if(sinal == "+"){
+                resultado = numero_1 + numero_2;
+            }
+            if(sinal == "-"){
+                resultado = numero_1 - numero_2;
+            }
+
+            alert(" resultado é: "+resultado);
 
 
 
-    </script>
-</body>
-
+        </script>
+    </body>
 </html>
